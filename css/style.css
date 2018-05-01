@@ -842,7 +842,7 @@ header {
       overflow: hidden;
       position: relative; }
       .videoSlider_cover .videoSlider .videoSlider_imgCover img {
-        width: 100%;
+        width: 79%;
         height: 100%;
         cursor: pointer; }
     .videoSlider_cover .videoSlider .videoSliderDescription {
@@ -1129,3 +1129,28 @@ header {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 25px; }
+
+
+/*------*/
+.slick-slide img{
+  width: 100%;
+}
+
+.videoSlider_cover .slick-slide img{
+  width: 75%!important;
+}
+
+:root {
+  --mouseX: 0deg;
+  --mouseY: 0deg;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.benefits_block img {
+  margin: auto;
+  transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
+}
